@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #0c144b;
+    height: 90px;
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-item {
+    margin-left: 10px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .navbar-link:hover{
+    color:blue;
+  }
