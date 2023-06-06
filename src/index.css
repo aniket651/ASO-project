@@ -1,0 +1,78 @@
+.navbar{
+
+  margin: 0;
+  padding: 0;
+  
+}
+.footer {
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+  text-align: center;
+  
+}
+.main{
+
+  background-image: url('../Back.jpg') ; 
+  background-repeat: no-repeat;
+  background-size:cover;
+  opacity: 0.8;
+  /* background-color: rgb(9, 34, 117); */
+  /* color: rgb(228, 240, 250); */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+img{
+  opacity: 0.5;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  padding-top: 8%;
+}
+.hrr{
+  display: flex;
+  justify-content: center;
+  /* padding-top: 8%; */
+}
+hr{
+  display: block;
+size: 10;
+width: 50%;
+margin: 1em 0;
+color: aliceblue;
+padding: 0;
+}
+.entry{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  width: 50px,
+  
+  /* padding: 0 !important; */
+}
+.form-control{
+  width: 300px;
+  justify-content: space-around;
+}
+.button{
+  margin: 20px;
+  margin-left: 40%;
+  justify-items: center;
+}
+
+@media (max-width:750px) {
+  .main{
+    display: flex;
+    /* justify-content: center; */
+  }
+}
