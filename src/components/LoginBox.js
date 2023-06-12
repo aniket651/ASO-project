@@ -3,7 +3,6 @@ import './LoginBox.css';
 import { useRef } from 'react';
 
 function LoginBox() {
-  const Password = useRef(null);
   const Username = useRef(null);
 
   const userHandler = (e)=>{
@@ -12,24 +11,6 @@ function LoginBox() {
     }
     else{
       Username.current.setCustomValidity("");
-    }
-  }
-
-  const passwordHandler = (e)=>{
-    if(e.target.value.length<8){
-      Password.current.setCustomValidity("min 8 characters are required");
-    }
-    else if(!RegExp(/[A-Z]/).test(e.target.value )){
-      Password.current.setCustomValidity("Password must contain a uppercase character");
-    }
-    else if(!RegExp(/\d/).test(e.target.value )){
-      Password.current.setCustomValidity("Password must contain a digit between 0-9");
-    }
-    else if(!RegExp(/[!@#$%^&*()_+{}:"<>?,./;\\\|]/).test(e.target.value )){
-      Password.current.setCustomValidity("Password must contain some special characters");
-    }
-    else{
-      Password.current.setCustomValidity("");
     }
   }
 
@@ -48,7 +29,7 @@ function LoginBox() {
           <div className='sub-box'>
             <label htmlFor='password'>Password</label>
             <br />
-            <input id='password' type='password' name='password' required onChange={passwordHandler} ref={Password}/>
+            <input id='password' type='password' name='password' required />
             <br />
             <div className='forgot-password'><a href='' aria-label='Click here if you forgot your password'>forgot password</a></div>
           </div>
