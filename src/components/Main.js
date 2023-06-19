@@ -6,21 +6,21 @@ export default function Main(){
     const[SkuFile,setSkuFile] = useState('');
 
     const handleChange = (e) =>{
-        setSkuNo(e.target.value);
-        setSkuFile(e.target.value);
+        // setSkuNo(e.target.value);
+        // setSkuFile(e.target.value);
     }
     const handleClick = event => {
-        event.preventDefault();
+        // event.preventDefault();
     
-        if (SkuNo === '' && SkuFile === '') {
-          alert("No input given for validation");
-        }
+        // if (SkuNo === '' && SkuFile === '') {
+        //   alert("No input given for validation");
+        // }
       };
     return(
         <>
                <div className='main'>
                     <div className="container">
-                        <h1 style={{color:"rgb(228, 240, 250)"}}><i>Sku Validate</i></h1>
+                        <h1 style={{color:"rgb(42, 72, 172)"}}><i>Sku Validate</i></h1>
                     </div>
                     <div className="hrr">
 
@@ -31,8 +31,8 @@ export default function Main(){
                         
                         <div className="form-group name1 col-md-5">
                             <form action="" name="myForm1">
-                                <input type="text" name="SkuNo"  className="form-control" placeholder="Sku Number" onChange={handleChange}/>
-                                <input className="btn btn-primary button" type="submit" onClick={handleClick} value="Submit"/>
+                                <input type="text" name="SkuNo"  className="form-control" placeholder="Sku Number" onChange={handleChange} required/>
+                                <input className="btn btn-primary button" type="submit" style={{backgroundColor:"#071361"}} onClick={handleClick} value="Submit"/>
                             </form>
                                 
                             
@@ -43,15 +43,15 @@ export default function Main(){
                         
                         <div className="form-group name1 col-md-2">
                             <div className="container">
-                                <p style={{color:'aliceBlue'}}>OR</p>
+                                <p style={{color:'rgb(150, 172, 241)'}}><i>OR</i></p>
                             </div>
                                 
                         </div>
 
                         <div className="form-group name1 col-md-5">
                             <form action="" name="myForm2">
-                                <input className="form-control" name="SkuFile" type="file" id="formFile" onChange={handleChange}/>
-                                <input className="btn btn-primary button" type="submit" value="Submit" onClick={handleClick}/>
+                                <input className="form-control" name="SkuFile" type="file" id="formFile" onChange={handleChange} required/>
+                                <input className="btn btn-primary button" type="submit" style={{backgroundColor:"#071361"}} value="Submit" onClick={handleClick}/>
                             </form>
                         </div>
 
