@@ -1,16 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import './App1.css';
 import LoginBox from './components/LoginBox';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header1 from './components/Header1';
+import Footer1 from './components/Footer1';
 
 function App() {
   return (
     <div className="App">
       <div className='slantdiv'></div>
-      <Header />
+      <Header1 />
       <LoginBox />
-      <Footer />
+      <Footer1 />
     </div>
   );
 }

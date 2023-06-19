@@ -1,8 +1,8 @@
-import './Footer.css';
+import './Footer1.css';
 
 import React from 'react'
 
-function Footer() {
+function Footer1() {
   return (
     <div className='footer'>
         Copyright @ 2021 by Academy Sports & Outdoors 
@@ -10,4 +10,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer1

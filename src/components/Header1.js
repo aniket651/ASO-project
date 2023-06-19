@@ -1,7 +1,7 @@
 import React from 'react'
-import './Header.css';
+import './Header1.css';
 
-function Header() {
+function Header1() {
   return (
     <div className='header'>
         <div className='header-inner'>
@@ -16,4 +16,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header1
